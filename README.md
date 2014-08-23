@@ -1,0 +1,4 @@
+azolla-wth-lua
+==============
+
+With this simulator, we can design how a robot will navigate in a 2D world by using a set of rules that we design. The rules are designed by using Lua script. Lua itself is a powerful, fast, lightweight, embeddable scripting language. Using Lua will offer us many benefits in designing algorithms for mobile robots. For the world editor, we use GDI Device Context programming. Users can create the environment for testing the robots by using the click and drag method. Here is a summary of the features:      Differential steering robot     Multiple-robot simulation     Sonar and laser beam type distance sensor     Embedded Lua script for the robot code     Graphical world editor     Code editor with syntax colorization and auto completion  Knowledge in Lua is also necessary. Lua is not something difficult to learn. You can check the Lua website.
