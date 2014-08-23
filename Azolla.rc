@@ -1,0 +1,644 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_OUTPUT_POPUP MENU 
+BEGIN
+    POPUP "OUTPUT_POPUP"
+    BEGIN
+        MENUITEM "Clear",                       ID_POPUP_CLEAR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INFO DIALOGEX 0, 0, 290, 68
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_EDOUTPUT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,7,7,276,54,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Azolla.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Azolla.ico"
+IDR_AZOLLATYPE          ICON                    "res\\AzollaDoc.ico"
+IDR_EDITOR              ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_OBJTOOLBAR          BITMAP                  "res\\bmp00002.bmp"
+IDR_EDITORTOOLBAR       BITMAP                  "res\\bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_SIMULATION_RUN
+    BUTTON      ID_SIMULATION_STOP
+    SEPARATOR
+    BUTTON      ID_VIEW_EDITOR
+    BUTTON      ID_ROBOT_SETPROPERTIES
+    BUTTON      ID_VIEW_ROBOTPROPERTIES
+    BUTTON      ID_VIEW_INFO
+    SEPARATOR
+    BUTTON      ID_ROBOT_ADDROBOT
+    BUTTON      ID_ROBOT_REMOVEROBOT
+    SEPARATOR
+    BUTTON      ID_ROBOT_ADDMARK
+    BUTTON      ID_ROBOT_REMOVEMARK
+    SEPARATOR
+    BUTTON      ID_ROBOT_SHOWTRAIL
+    BUTTON      ID_WORLD_SHOWGRID
+    SEPARATOR
+    BUTTON      ID_VIEW_ZOOMIN
+    BUTTON      ID_VIEW_ZOOMOUT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_OBJTOOLBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BTSELECT
+    BUTTON      ID_BTSELECTALL
+    SEPARATOR
+    BUTTON      ID_BTRECT
+    BUTTON      ID_BTCIRC
+    BUTTON      ID_BTLINE
+    SEPARATOR
+    BUTTON      ID_BTDEL
+END
+
+IDR_EDITORTOOLBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BTOPEN_EDITOR
+    BUTTON      ID_BTSAVE_EDITOR
+    SEPARATOR
+    BUTTON      ID_BTCUT_EDITOR
+    BUTTON      ID_BTCOPY_EDITOR
+    BUTTON      ID_BTPASTE_EDITOR
+    SEPARATOR
+    BUTTON      ID_BTUNDO_EDITOR
+    BUTTON      ID_BTREDO_EDITOR
+    SEPARATOR
+    BUTTON      ID_HOLDERTEXTTOFIND
+    BUTTON      ID_BTFIND_EDITOR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Editor...\tCtrl+E",          ID_VIEW_EDITOR
+        MENUITEM "&Robot Proporties...",        ID_VIEW_ROBOTPROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        POPUP "Zoom"
+        BEGIN
+            MENUITEM "Zoom In",                     ID_VIEW_ZOOMIN
+            MENUITEM "Zoom Out",                    ID_VIEW_ZOOMOUT
+        END
+    END
+    POPUP "&Robot"
+    BEGIN
+        MENUITEM "Add robot",                   ID_ROBOT_ADDROBOT
+        MENUITEM "Remove robot",                ID_ROBOT_REMOVEROBOT
+        MENUITEM "&Reset position",             ID_ROBOT_RESETPOSITION
+        MENUITEM SEPARATOR
+        MENUITEM "&Set properties...",          ID_ROBOT_SETPROPERTIES
+        MENUITEM "Show &trajectory",            ID_ROBOT_SHOWTRAIL
+    END
+    POPUP "&World"
+    BEGIN
+        MENUITEM "&Clear world",                ID_WORLD_CLEARWORLD
+        MENUITEM "&Show grids",                 ID_WORLD_SHOWGRID
+    END
+    POPUP "&Simulation"
+    BEGIN
+        MENUITEM "&Run\tF5",                    ID_SIMULATION_RUN
+        MENUITEM "&Stop",                       ID_SIMULATION_STOP
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Azolla...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_SIMULATION_RUN,      VIRTKEY, NOINVERT
+    "E",            ID_VIEW_EDITOR,         VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_BTSELECTALL,         VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 211, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Azolla"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,16,11,20,20
+    DEFPUSHBUTTON   "OK",IDOK,81,160,50,14,WS_GROUP
+    LTEXT           "Auralius Manurung",IDC_STATIC,53,27,114,8,SS_NOPREFIX
+    LTEXT           "2D mobile robot simulator with Lua",IDC_STATIC,53,17,110,8
+    LTEXT           "Azolla 1.0.4",IDC_STATIC,53,8,114,8,SS_NOPREFIX
+    LTEXT           "Credits:\n=====\nCCAnvas by Auralius Manurung\nCColorButton by James White\nCNumSpinCtrl by Damir Valiulin\nLua C++ wrapper by Richard Shephard\nCCoolDialogBar by Oliver Smith\n\nUsing:\n====\nLua 5.1.4\nScintilla 2.0.2",IDC_STATIC,7,49,196,99,NOT WS_GROUP,WS_EX_STATICEDGE
+END
+
+IDD_SHOWPROPERTIES DIALOGEX 0, 0, 163, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LISTPROPERTY,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,7,7,149,166,WS_EX_STATICEDGE
+END
+
+IDD_EDITOR DIALOGEX 0, 0, 506, 319
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Code Editor"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,4,0
+ PRODUCTVERSION 1,0,4,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Azolla, 2D mobile robot simulator with Lua by Auralius Manurung"
+            VALUE "CompanyName", "Gyeongsang National University"
+            VALUE "FileVersion", "1.0.4"
+            VALUE "InternalName", "Azolla.exe"
+            VALUE "OriginalFilename", "Azolla.exe"
+            VALUE "ProductName", "Azolla"
+            VALUE "ProductVersion", "1.0.4"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_SHOWPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 498
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 312
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Azolla-1.0.4\n\nAzolla\n\n\nAzolla.Document\nAzolla.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Azolla"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document"
+    ID_FILE_SAVE_AS         "Save the active document with a new name"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright"
+    ID_APP_EXIT             "Quit the application; prompts to save documents"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    ID_LINE_INDICATOR       "Line: 0, Col: 0, Character: 0"
+    IDS_LINE_INDICATOR      "Line: %ld, Col: %ld, Character: %ld"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SIMULATION_RUN       "Run Simulation"
+    ID_VIEW_ROBOTPROPERTIES "View active robot properties"
+    ID_VIEW_EDITOR          "Open code editor"
+    ID_SIMULATION_STOP      "Stop Simulation"
+    ID_BTRECT               "Draw Rectangle\nRectabgle"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BTCIRC               "Draw Circle\nCircle"
+    ID_BTLINE               "Draw Line\nLine"
+    ID_BTDEL                "Erase\nErase"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ROBOT_SETPROPERTIES  "Show window to change robot properties"
+    ID_ROBOT_RESETPOSITION  "Reset robot position"
+    ID_WORLD_CLEARWORLD     "Clear world"
+    ID_ROBOT_SHOWTRAIL      "Show/hide robot trajectory"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WORLD_SHOWGRID       "Show/hide grids"
+    ID_BTSELECTALL          "Select and move all\nSelect all"
+    ID_ROBOT_ADDROBOT       "Add another robot (click where you want to add your robot)"
+    ID_ROBOT_REMOVEROBOT    "Remove the last robot"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WORLD_ZOOMIN         "Zoom in 10 percents"
+    ID_WORLD_ZOOMOUT        "Zoom out 10 percents"
+    ID_VIEW_INFO            "View output message"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Indonesian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_IND)
+#ifdef _WIN32
+LANGUAGE LANG_INDONESIAN, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETPROPERTIES DIALOGEX 0, 0, 340, 313
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Define robot properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,283,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,283,23,50,14
+    LTEXT           "Robot Index:",IDC_STATIC,22,20,42,8
+    COMBOBOX        IDC_CB_ROBOTINDEX,107,18,48,49,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Robot Diameter:",IDC_STATIC,22,39,52,8
+    EDITTEXT        IDC_EDDIAMETER,107,37,39,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPINDIAMETER,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,144,37,11,13
+    LTEXT           "cm",IDC_STATIC,151,38,15,13
+    LTEXT           "Robot Angle:",IDC_STATIC,22,59,42,8
+    EDITTEXT        IDC_EDANGLE,107,56,39,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPINANGLE,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,144,55,11,13
+    LTEXT           "degrees",IDC_STATIC,152,55,29,13
+    LTEXT           "Robot Color:",IDC_STATIC,22,79,40,8
+    DEFPUSHBUTTON   "",IDCOLORPICKER,107,75,47,14
+    LTEXT           "Number of Sensors:",IDC_STATIC,22,143,63,8
+    EDITTEXT        IDC_EDSENSORNUM,107,141,39,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPINSENSORNUM,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,144,141,11,13
+    LTEXT           "Radiation cone:",IDC_STATIC,22,164,51,8
+    EDITTEXT        IDC_EDRADIATION,107,162,40,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPINRADIATION,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,144,162,11,13
+    LTEXT           "degrees",IDC_STATIC,151,166,30,13
+    LTEXT           "Minimum distance:",IDC_STATIC,22,185,59,8
+    EDITTEXT        IDC_EDMINDISTANCE,107,183,40,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPINMINDISTANCE,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,144,183,11,13
+    LTEXT           "cm",IDC_STATIC,152,184,15,13
+    LTEXT           "Maximum distance:",IDC_STATIC,22,206,61,8
+    EDITTEXT        IDC_EDMAXDISTANCE,107,204,40,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPINMAXDISTANCE,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,144,204,11,13
+    LTEXT           "cm",IDC_STATIC,152,205,15,13
+    LTEXT           "Sampling rate",IDC_STATIC,21,228,44,8
+    EDITTEXT        IDC_EDSONARRATE,107,226,40,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPINSONARRATE,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,143,226,11,13
+    LTEXT           "seconds",IDC_STATIC,153,228,29,13
+    LTEXT           "Mean:",IDC_STATIC,209,142,21,8
+    EDITTEXT        IDC_EDGAUSSMEAN,274,136,40,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPINGAUSSMEAN,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,313,137,11,13
+    LTEXT           "Deviation:",IDC_STATIC,209,158,33,8
+    EDITTEXT        IDC_EDGAUSSDEV,274,156,40,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPINGAUSSDEV,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,313,156,11,13
+    LTEXT           "Time steps:",IDC_STATIC,21,272,37,8
+    EDITTEXT        IDC_EDTIMESTEP,107,269,40,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPINTIMESTEP,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,144,269,11,13
+    LTEXT           "seconds",IDC_STATIC,150,272,27,9
+    GROUPBOX        "Robot settings",IDC_STATIC,7,3,185,96
+    CTEXT           "General settings",IDC_STATIC,7,109,326,12,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "Sensors",IDC_STATIC,7,126,177,126
+    GROUPBOX        "Sensor Gaussian Noise",IDC_STATIC,194,126,139,52
+    GROUPBOX        "Simulation",IDC_STATIC,7,258,177,36
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SETPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Indonesian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Azolla.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

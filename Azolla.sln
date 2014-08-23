@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Azolla", "Azolla.vcproj", "{6B9EA731-21A7-4363-ADE2-7BF67375D378}"
+	ProjectSection(ProjectDependencies) = postProject
+		{84C99330-86EA-4ACE-9AA5-304D67268202} = {84C99330-86EA-4ACE-9AA5-304D67268202}
+		{B5923BD0-081B-4D9F-A47D-B47171EB156A} = {B5923BD0-081B-4D9F-A47D-B47171EB156A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LuaLib", "LuaLib\LuaLib.vcproj", "{84C99330-86EA-4ACE-9AA5-304D67268202}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SciLexer", "Scintilla\vcbuild\SciLexer.vcproj", "{B5923BD0-081B-4D9F-A47D-B47171EB156A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5D236EFD-3B0D-48A3-A2AD-0BCC1192B07E}"
+	ProjectSection(SolutionItems) = preProject
+		BUGS.log = BUGS.log
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B9EA731-21A7-4363-ADE2-7BF67375D378}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6B9EA731-21A7-4363-ADE2-7BF67375D378}.Debug|Win32.Build.0 = Debug|Win32
+		{6B9EA731-21A7-4363-ADE2-7BF67375D378}.Release|Win32.ActiveCfg = Release|Win32
+		{6B9EA731-21A7-4363-ADE2-7BF67375D378}.Release|Win32.Build.0 = Release|Win32
+		{84C99330-86EA-4ACE-9AA5-304D67268202}.Debug|Win32.ActiveCfg = Debug|Win32
+		{84C99330-86EA-4ACE-9AA5-304D67268202}.Debug|Win32.Build.0 = Debug|Win32
+		{84C99330-86EA-4ACE-9AA5-304D67268202}.Release|Win32.ActiveCfg = Release|Win32
+		{84C99330-86EA-4ACE-9AA5-304D67268202}.Release|Win32.Build.0 = Release|Win32
+		{B5923BD0-081B-4D9F-A47D-B47171EB156A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B5923BD0-081B-4D9F-A47D-B47171EB156A}.Debug|Win32.Build.0 = Debug|Win32
+		{B5923BD0-081B-4D9F-A47D-B47171EB156A}.Release|Win32.ActiveCfg = Release|Win32
+		{B5923BD0-081B-4D9F-A47D-B47171EB156A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

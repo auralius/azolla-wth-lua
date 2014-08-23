@@ -1,0 +1,10 @@
+1st priority:
+- Add new command: getcollisionangle
+- Fix issue about distance sensor accuracy
+
+2nd prioriy:
+- Enhance world editor
+
+3rd priority:
+- Documentation of how to use
+- More examples
